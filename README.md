@@ -2,7 +2,7 @@
 ![banner](https://github.com/Wook-2/GoStudy/blob/master/image/banner.jpg?raw=true "banner")
 ## Info
 - ### Theory
-##### 	basic grammer of golang.
+  - ##### basic grammer of golang.
 - ### bank & dictionary
   - #####	simple example of project bank&dictionary.
 - ### example_code
