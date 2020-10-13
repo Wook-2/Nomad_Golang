@@ -1,4 +1,4 @@
-#study golang
+# study golang
 ![banner](https://github.com/Wook-2/GoStudy/blob/master/image/banner.jpg?raw=true "banner")
 ## Info
 - ### Theory
@@ -7,7 +7,7 @@
 #####	simple example of project bank&dictionary.
 - ### example_code
 #####	this and that of golang.
-- ###url_checker
+- ### url_checker
 #####	check whether url is available or not.
 
 ## Job Scrapper
