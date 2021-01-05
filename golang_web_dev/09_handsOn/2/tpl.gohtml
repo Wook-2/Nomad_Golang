@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Structure</title>
+</head>
+<body>
+Breakfast<br>
+========<br>
+{{ range .Breakfast }}
+{{.Name}}
+{{.Price}}
+<br>
+{{end}}
+<br><br>
+Lunch<br>
+========<br>
+{{ range .Lunch }}
+{{.Name}}
+{{.Price}}
+<br>
+{{end}}
+<br><br>
+Dinner<br>
+========<br>
+{{ range .Dinner }}
+{{.Name}}
+{{.Price}}
+<br>
+{{end}}
+
+
+</body>
+</html>
