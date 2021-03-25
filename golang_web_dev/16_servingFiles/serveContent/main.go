@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"io"
 	"net/http"
 	"os"
@@ -10,11 +11,13 @@ import (
 func main() {
 	http.HandleFunc("/", index)
 	http.HandleFunc("/byungwook.jpg", pic)
+
+	fmt.Println("Serving ...")
 	http.ListenAndServe(":8080", nil)
 }
 
 func index(w http.ResponseWriter, req *http.Request) {
-	w.Header().Set("Contetn-Type", "text/html; charset=utg-8")
+	w.Header().Set("Content-Type", "text/html; charset=utg-8")
 	io.WriteString(w, `<img src="/byungwook.jpg">`)
 }
 
