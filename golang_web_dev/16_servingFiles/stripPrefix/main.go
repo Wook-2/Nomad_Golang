@@ -8,7 +8,7 @@ import (
 func main() {
 	http.HandleFunc("/", index)
 	// 현재 경로에서의 assets폴더를 웹서버의 exam폴더로 띄워준다. !
-	http.Handle("/exam/", http.StripPrefix("/exam", http.FileServer((http.Dir("./assets")))))
+	http.Handle("/exam/", http.StripPrefix("/exam", http.FileServer(http.Dir("./assets"))))
 	http.ListenAndServe(":8080", nil)
 }
 
