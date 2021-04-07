@@ -26,7 +26,7 @@ func set(w http.ResponseWriter, r *http.Request) {
 
 func set2(w http.ResponseWriter, r *http.Request) {
 	http.SetCookie(w, &http.Cookie{
-		Name:  "my-cookie",
+		Name:  "my-cookie2",
 		Value: "value of cookieeeeeeee",
 		Path:  "/",
 	})
