@@ -16,7 +16,7 @@ func main() {
 
 func index(w http.ResponseWriter, req *http.Request) {
 	w.Header().Set("Content-Type", "text/html; charset=utg-8")
-	io.WriteString(w, `<img src="/gopher.jpg">`)
+	io.WriteString(w, `<img src="gopher.jpg">`)
 }
 
 func pic(w http.ResponseWriter, req *http.Request) {
