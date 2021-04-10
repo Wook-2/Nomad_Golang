@@ -17,6 +17,7 @@ func foo(w http.ResponseWriter, r *http.Request) {
 }
 
 func bar(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Cache-Control", "no-cache, private, max-age=0")
 	fmt.Println("Your request method at bar: ", r.Method)
 	http.Redirect(w, r, "/", http.StatusMovedPermanently)
 }
