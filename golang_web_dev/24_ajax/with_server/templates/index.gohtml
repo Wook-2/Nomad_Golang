@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax-Server</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Make something happen</h1>
+    
+
+    <script>
+         document.querySelector('h1').onclick = makeRequest;
+
+         function makeRequest() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', '/foo', true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200){
+                    var b = document.querySelector('body');
+                    var myHeadingOne = document.createElement('p');
+                    var myHeadingOneText = document.createTextNode(xhr.responseText);
+                    myHeadingOne.appendChild(myHeadingOneText);
+                    b.appendChild(myHeadingOne);
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</body>
+</html>
